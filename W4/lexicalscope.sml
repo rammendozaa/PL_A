@@ -10,4 +10,3 @@ val z = f (x + y)
 (* z will have 6 since f is being called with 5, but the function is
 defined before when x was 1 *)
 
-(* lexical scope *)
