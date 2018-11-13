@@ -1,0 +1,8 @@
+datatype suit = Club | Diamond | Spade | Heart
+datatype rank = Jack | Queen | King | Ace | Num of int
+type card = suit * rank
+type name_record = {student_num : int option,
+		    first : string,
+		    middle : string option,
+		    last : string
+		   }

@@ -1,0 +1,6 @@
+fun nondecreasing xs =
+    case xs of
+	[] => true
+	x :: [] => true
+      | x :: y:: xs  => if x => y then false
+				    |  => 

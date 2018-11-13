@@ -1,0 +1,4 @@
+fun full_name1(r: {first : string, middle : string, last : string}) =
+    case r of
+	{first = x, second = y, third = z} => x ^ " " ^ y ^ " " ^ z
+				      

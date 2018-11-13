@@ -1,0 +1,124 @@
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw2provided";
+[opening hw2provided]
+[use failed: Io: openIn failed on "hw2provided", Win32TextPrimIO:openRd: failed]
+- use "hw2provided.sml";
+[opening hw2provided.sml]
+hw2provided.sml:64.9-64.24 Error: operator and operand don't agree [tycon mismatch]
+  operator domain: string list * string list
+  operand:         string list * 
+                   {first:string, last:string, middle:string} list
+  in expression:
+    rev (nil,auxList)
+hw2provided.sml:72.19-72.41 Error: operator and operand don't agree [tycon mismatch]
+  operator domain: string list list * 
+                   {first:string, last:string, middle:string} list
+  operand:         string list list * 'Z list list
+  in expression:
+    similar_names (sL,xs')
+hw2provided.sml:67.2-72.41 Error: types of rules don't agree [tycon mismatch]
+  earlier rule(s): {first:string, last:string, middle:string} list -> _
+  this rule: 'Z list list -> _
+  in rule:
+    :: (nil,xs') => similar_names (sL,xs')
+val it = () : unit
+- hw2provided.sml:67.2-72.41 Error: types of rules don't agree [tycon mismatch]
+  earlier rule(s): {first:string, last:string, middle:string} list -> _
+  this rule: 'Z list list -> _
+  in rule:
+    :: (nil,xs') => similar_names (sL,xs')
+val it = () : unit
+- stdIn:2.16-2.22 Error: syntax error: deleting  COLON REAL ID
+stdIn:2.41-2.49 Error: syntax error: deleting  OF ID
+stdIn:2.62-2.68 Error: syntax error: deleting  LBRACKET ID
+stdIn:2.77-3.10 Error: syntax error: deleting  RBRACKET ID
+stdIn:3.15-3.18 Error: syntax error: deleting  LPAREN ID RPAREN
+stdIn:3.71-4.7 Error: syntax error: deleting  WILD ID
+stdIn:4.30-5.5 Error: syntax error: deleting  WILD IN
+stdIn:6.8-6.13 Error: syntax error: deleting  LPAREN ID COMMA
+stdIn:6.16-6.20 Error: syntax error: deleting  RPAREN DARROW
+stdIn:6.35-6.39 Error: syntax error: deleting  LPAREN ID COMMA
+stdIn:6.42-7.4 Error: syntax error: deleting  RPAREN VAL
+stdIn:7.8 Error: syntax error found at EQUALOP
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw2provided.sml";
+[opening hw2provided.sml]
+hw2provided.sml:72.19-72.41 Error: operator and operand don't agree [tycon mismatch]
+  operator domain: string list list * 
+                   {first:string, last:string, middle:string} list
+  operand:         string list list * 'Z list list
+  in expression:
+    similar_names (sL,xs')
+hw2provided.sml:67.2-72.41 Error: types of rules don't agree [tycon mismatch]
+  earlier rule(s): {first:string, last:string, middle:string} list
+                   -> {first:string, last:string, middle:string} list
+  this rule: 'Z list list -> _
+  in rule:
+    :: (nil,xs') => similar_names (sL,xs')
+val it = () : unit
+- hw2provided.sml:67.2-72.41 Error: types of rules don't agree [tycon mismatch]
+  earlier rule(s): {first:string, last:string, middle:string} list
+                   -> {first:string, last:string, middle:string} list
+  this rule: 'Z list list -> _
+  in rule:
+    :: (nil,xs') => similar_names (sL,xs')
+val it = () : unit
+- stdIn:2.16-2.22 Error: syntax error: deleting  COLON REAL ID
+stdIn:2.41-2.49 Error: syntax error: deleting  OF ID
+stdIn:2.62-2.68 Error: syntax error: deleting  LBRACKET ID
+stdIn:2.77-3.10 Error: syntax error: deleting  RBRACKET ID
+stdIn:3.15-3.18 Error: syntax error: deleting  LPAREN ID RPAREN
+stdIn:5.30-6.5 Error: syntax error: deleting  WILD IN
+stdIn:7.8-7.13 Error: syntax error: deleting  LPAREN ID COMMA
+stdIn:7.16-7.20 Error: syntax error: deleting  RPAREN DARROW
+stdIn:7.35-7.39 Error: syntax error: deleting  LPAREN ID COMMA
+stdIn:7.42-8.4 Error: syntax error: deleting  RPAREN VAL
+stdIn:8.8 Error: syntax error found at EQUALOP
+- 
+
+Process sml finished
+Standard ML of New Jersey v110.80 [built: Thu Aug 18 15:00:00 2016]
+- use "hw2provided.sml";
+[opening hw2provided.sml]
+hw2provided.sml:67.2-71.12 Warning: match nonexhaustive
+          {first=x,last=z,middle=y} :: xs' => ...
+  
+val same_string = fn : string * string -> bool
+val rev = fn : string list * string list -> string list
+val all_except_option = fn : string * string list -> string list option
+val get_substitutions1 = fn : string list list * string -> string list
+val get_substitutions2 = fn : string list list * string -> string list
+val similar_names = fn
+  : string list list * {first:string, last:string, middle:string} list
+    -> {first:string, last:string, middle:string} list
+datatype suit = Clubs | Diamonds | Hearts | Spades
+datatype rank = Ace | Jack | King | Num of int | Queen
+type card = suit * rank
+datatype color = Black | Red
+datatype move = Discard of suit * rank | Draw
+exception IllegalMove
+val it = () : unit
+- hw2provided.sml:67.2-72.41 Error: types of rules don't agree [tycon mismatch]
+  earlier rule(s): {first:string, last:string, middle:string} list
+                   -> {first:string, last:string, middle:string} list
+  this rule: 'Z list list -> _
+  in rule:
+    :: (nil,xs') => similar_names (sL,xs')
+val it = () : unit
+- stdIn:2.16-2.22 Error: syntax error: deleting  COLON REAL ID
+stdIn:2.41-2.49 Error: syntax error: deleting  OF ID
+stdIn:2.62-2.68 Error: syntax error: deleting  LBRACKET ID
+stdIn:2.77-3.10 Error: syntax error: deleting  RBRACKET ID
+stdIn:3.15-3.18 Error: syntax error: deleting  LPAREN ID RPAREN
+stdIn:5.30-6.5 Error: syntax error: deleting  WILD IN
+stdIn:7.8-7.13 Error: syntax error: deleting  LPAREN ID COMMA
+stdIn:7.16-7.20 Error: syntax error: deleting  RPAREN DARROW
+stdIn:7.35-7.39 Error: syntax error: deleting  LPAREN ID COMMA
+stdIn:7.42-8.4 Error: syntax error: deleting  RPAREN VAL
+stdIn:8.8 Error: syntax error found at EQUALOP
+- 
+
+Process sml finishe

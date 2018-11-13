@@ -1,0 +1,26 @@
+datatype exp =
+	 Constant of int
+	 | Negate of exp
+	 | Add of exp * exp
+	 | Multiply of exp * exp
+
+fun max_constant e=
+    let
+	fun max_two(e1, e2)=
+	    let val max_1 = max_constant e1
+		val max_2 = max_constant e2
+	    in
+		Int.max(m1 , m2)
+	    end
+    in
+	case e of
+	    Constant i => i
+	  | Negate e2 => (max_constant e2)
+	  | Add(e1 , e2) => max(e1 , e2)
+	  | Multiply(e1 , e2) => max(e1 , e2) 
+    end
+	
+
+
+val test_exp = Add(Constant 19, Negate(Constant 4))
+		  val nineteen = max_constant(test_exp)
