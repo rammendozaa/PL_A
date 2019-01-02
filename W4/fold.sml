@@ -1,7 +1,8 @@
 fun fold(f, acc, xs) =
     case xs of
 	[] => acc
-     | x :: xs' => fold(f, f(acc, x), xs') 
+     | x :: xs' => fold(f, f(acc, x), xs')
+     
 (* this is a left implementation, can be written from the right if necessary *)
 fun f1 xs = fold ((fn (x,y) => x + y), 0, xs)
 (* adds all the elements on the list *)
@@ -16,7 +17,7 @@ fun f4 (xs, s) =
     in
 	fold ((fn (x,y) => x andalso String.size y < i), true, xs)
     end
-(* checks if all the string in the list are smaller than a  string s *) 
+(* checks if all the string in the list are smaller than a  string s *)
 fun f5 (g, xs) = fold((fn (x, y) => x andalso g y), true, xs)
 		     (* receives a function and a list and returns if the elements of the list are true for g *)
 
