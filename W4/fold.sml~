@@ -1,4 +1,0 @@
-fun fold(f, acc, xs) =
-    case xs of
-	[] => []
-     | x :: xs' => fold(f, f(acc, x), xs') 
